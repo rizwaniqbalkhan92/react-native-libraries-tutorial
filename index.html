@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<title>FOR WEBVIEW</title>
+<body>
+
+
+
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+<h1>HTML CHARTS </h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam natus sunt fugiat vel vero facilis, deserunt amet nihil nisi ipsum id adipisci odio! Exercitationem eius earum totam veritatis, autem voluptate porro, consectetur culpa voluptatem mollitia expedita, aliquid nulla harum officiis! Alias, deleniti aliquam? Officia, nihil eius, eaque voluptates nesciunt deserunt illo veritatis harum voluptate quia, modi quaerat facere libero id nulla magni architecto similique at laborum cum optio a minus? Dolorum vel dicta, fuga delectus perferendis possimus. Omnis dicta sapiente repudiandae adipisci! At in esse magni hic, debitis delectus aspernatur. Veritatis excepturi libero sequi aperiam qui, quae iusto quia placeat odio nulla nostrum in quo, alias earum quis labore odit reprehenderit accusantium. Eligendi sint ipsam maiores voluptatem sit hic quisquam perferendis nostrum eveniet quaerat est, non sunt, et ipsum. Laboriosam, totam architecto? Distinctio corporis atque quasi! Amet quis aperiam modi cum omnis beatae voluptate odio corrupti animi aut fugiat distinctio nemo, repellat quae, harum nihil quibusdam tenetur architecto. Nulla libero nam commodi hic tempore quam necessitatibus atque voluptate et quaerat, maiores laboriosam fugiat nobis perferendis beatae molestias ut exercitationem dolorum accusantium illo autem laudantium, dicta dolorem. Facilis nam est eum cupiditate voluptatum, rem, praesentium temporibus molestias reiciendis, libero asperiores?</p>
+<script>
+var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+
+</body>
+</html>

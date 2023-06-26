@@ -1,14 +1,13 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {WebView} from 'react-native-webview';
 
 const ReactNativeWebView = () => {
   return (
-    <View>
-      <Text>ReactNativeWebView</Text>
-    </View>
-  )
-}
+    <WebView source={{uri: 'https://infinite.red'}} style={{marginTop: 0}} />
+  );
+};
 
-export default ReactNativeWebView
+export default ReactNativeWebView;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
