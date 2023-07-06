@@ -7,7 +7,7 @@ import RNDatePicker from './src/compnents/RNDatePicker';
 
 const App = () => {
   return (
-<RNDatePicker/>
+<Text>hello world</Text>
   );
 };
 
